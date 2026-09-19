@@ -1,0 +1,20 @@
+{
+  "name": "volcengine-skills",
+  "version": "0.1.0",
+  "description": "Volcengine Doubao ASR and TTS, Seedream image, Seedance video, and media specification skills",
+  "author": {
+    "name": "PartMe.AI",
+    "email": "partmeai@gmail.com"
+  },
+  "homepage": "https://github.com/full-aigc-skills/volcengine-skills",
+  "repository": "https://github.com/full-aigc-skills/volcengine-skills",
+  "source": "./",
+  "skills": [
+    "./skills/volcengine-asr-transcribe",
+    "./skills/volcengine-audio-spec",
+    "./skills/volcengine-design-use",
+    "./skills/volcengine-image-generation",
+    "./skills/volcengine-tts-narration",
+    "./skills/volcengine-video-generation"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "volcengine-asr-transcribe": {
+    "purpose": "使用豆包录音识别生成带毫秒级时间轴的转写结果",
+    "artifact": "asr-transcription-result",
+    "success": "转写文本、任务终态、词级时间轴和来源音频对应",
+    "not_for": "实时流式字幕、说话人鉴定或未经授权的录音处理",
+    "near_miss": "视频剪辑中的人工字幕校对",
+    "basic_prompt": "转写一段普通话 WAV 并输出词级时间轴",
+    "failure_prompt": "ASR 任务被取消或提交后进入 Failed",
+    "advanced_context": "长音频需要可恢复轮询和分段字幕交付"
+  },
+  "volcengine-audio-spec": {
+    "purpose": "定义并校验火山引擎音频任务的格式、采样率和交付规格",
+    "artifact": "audio-specification",
+    "success": "输入输出格式、时长、声道、采样率和验收方法完整",
+    "not_for": "直接生成音频或替代专业听感验收",
+    "near_miss": "视频编码规范或通用媒体容器选型",
+    "basic_prompt": "为普通话 ASR 定义 WAV 输入与字幕输出规格",
+    "failure_prompt": "音频格式与服务能力不匹配",
+    "advanced_context": "多来源音频需要统一规范后批量处理"
+  },
+  "volcengine-design-use": {
+    "purpose": "在火山引擎创作能力之间路由并编排图像、视频与音频任务",
+    "artifact": "volcengine-task-plan",
+    "success": "能力选择、凭据域、成本风险、任务标识和验收标准完整",
+    "not_for": "在未确认成本与授权时自动提交付费生成任务",
+    "near_miss": "单一 ASR、TTS、图像或视频专项任务",
+    "basic_prompt": "为产品发布规划图片、口播和短视频生成链",
+    "failure_prompt": "跨模态任务只完成部分生成步骤",
+    "advanced_context": "多个创作服务需要共享素材与阶段验收"
+  },
+  "volcengine-image-generation": {
+    "purpose": "使用 Seedream 生成可追溯的图像资产",
+    "artifact": "seedream-image-result",
+    "success": "图像、模型、尺寸、提示参数和任务响应可追溯",
+    "not_for": "身份伪造、受限内容或未经授权的人物图像生成",
+    "near_miss": "现有图像的像素级手工编辑",
+    "basic_prompt": "用 Seedream 生成 16:9 产品主视觉草图",
+    "failure_prompt": "图像任务被拒绝或返回空结果",
+    "advanced_context": "品牌活动需要一组风格一致的多尺寸图片"
+  },
+  "volcengine-tts-narration": {
+    "purpose": "使用豆包语音合成生成可审计的旁白音频",
+    "artifact": "tts-narration-result",
+    "success": "文本、音色授权、音频格式、时长和文件完整性验证通过",
+    "not_for": "未经同意克隆真实人物声音或冒充身份",
+    "near_miss": "专业录音棚配音、混音和母带制作",
+    "basic_prompt": "生成 20 秒中性普通话产品旁白",
+    "failure_prompt": "TTS 响应成功但音频文件为空或损坏",
+    "advanced_context": "多段旁白需要统一音色并匹配视频时长"
+  },
+  "volcengine-video-generation": {
+    "purpose": "使用 Seedance 生成带任务恢复信息的短视频资产",
+    "artifact": "seedance-video-result",
+    "success": "任务终态成功且视频、时长、分辨率与输入锚点可追溯",
+    "not_for": "长片剪辑、未授权人物视频或规避内容安全策略",
+    "near_miss": "剪映时间线编辑或 Blender 三维动画",
+    "basic_prompt": "根据产品首帧生成 5 秒镜头",
+    "failure_prompt": "视频任务超时但已经返回任务标识",
+    "advanced_context": "首尾帧约束的多镜头连续视频生成"
+  }
+}
