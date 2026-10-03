@@ -1,0 +1,4 @@
+interface:
+  display_name: "火山引擎创作导航"
+  short_description: "按语音转写、配音、图片或视频需求选择豆包创作工作流"
+  default_prompt: "使用 $volcengine-design-use 按语音转写、配音、图片或视频需求选择豆包创作工作流；先核对输入、可用能力和交付要求。"

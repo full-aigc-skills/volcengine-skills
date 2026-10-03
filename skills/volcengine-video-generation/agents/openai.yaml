@@ -1,0 +1,4 @@
+interface:
+  display_name: "火山引擎视频生成"
+  short_description: "通过 Seedance 组织视频任务，保留任务标识并恢复轮询与验证下载"
+  default_prompt: "使用 $volcengine-video-generation 通过 Seedance 组织视频任务，保留任务标识并恢复轮询与验证下载；先核对输入、可用能力和交付要求。"

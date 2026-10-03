@@ -1,0 +1,4 @@
+interface:
+  display_name: "豆包语音规格与排障"
+  short_description: "核对豆包语音凭据、音频格式、限制和音色资源，辅助接口诊断"
+  default_prompt: "使用 $volcengine-audio-spec 核对豆包语音凭据、音频格式、限制和音色资源，辅助接口诊断；先核对输入、可用能力和交付要求。"
